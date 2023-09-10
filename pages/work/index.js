@@ -160,7 +160,7 @@ const Work = () => {
                   <div key={itemIndex}>
                     {item.description?.map((work) => {
                       return (
-                        <ol className="text-sm font-light mb-4 list-disc list-outside leading-normal text-justify ml-[-1em]">
+                        <ol key={itemIndex} className="text-sm font-light mb-4 list-disc list-outside leading-normal text-justify ml-[-1em]">
                           {work}
                         </ol>
                       );

@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Avatar2 from "../../components/Avatar2";
 import Circles from "../../components/Circles";
+import Image from "next/image";
 import {
   FaPython, FaJava, FaVuejs,
   FaHtml5,
@@ -24,46 +25,46 @@ const aboutData = [
       {
         title: "Programming",
         icons: [
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width={50} height={50} />,
-
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" width={50} height={50} />,
-          <SiCplusplus />,
-
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width={50} height={50} />,
-          <SiCsharp />,
+          <Image  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" width={50} height={50} />,
+          <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" width={50} height={50} />,
+          <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width={50} height={50} />,
+          <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width={50} height={50}/>,
+          <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width={50} height={50} />,
         ],
       },
       {
         title: "Client Side",
         icons: [
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />,
-          <FaCss3 />,
-          <FaReact />,
-          <SiNextdotjs />,
-
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />,
-
-          <FaVuejs />,
-          <SiDotnet />,
+          <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width={50} height={50} />,
+          <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width={50} height={50} />,
+          <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" width={50} height={50}/>,
+          <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width={50} height={50}  />,
+          <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg" width={50} height={50}/>,
+          <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg" width={50} height={50}/>,
         ],
       },
       {
         title: "Server Side",
         icons: [
-          <SiFlask />,
-          <SiSpringboot />,
-          <SiMysql />,
-          <SiPostgresql />,
-          <SiMongodb />,
+          
+            <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg" width={50} height={50}/>,
+            <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" width={50} height={50} />,
+            <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-plain.svg" width={50} height={50} />,
+            <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"  width={50} height={50}/>,
+            <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" width={50} height={50}/>,
+            <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" width={50} height={50}/>,
         ],
       },
       {
         title: "Devops & Other Tools",
         icons: [
           <SiAmazonaws />,
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />,
-          <SiGit />,
-          <SiJenkins />,
+          <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width={50} height={50}  />,
+          <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg"  width={50} height={50}  />,
+          <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg"  width={50} height={50} />,
+          <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain-wordmark.svg"  width={50} height={50} />
+          
+          ,
         ],
       },
     ],
