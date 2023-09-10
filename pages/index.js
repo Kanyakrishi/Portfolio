@@ -28,9 +28,6 @@ const Home = () => {
             animate="show"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-            voluptates cumque nobis laborum at amet deleniti odit sequi
-            accusamus debitis!
           </motion.p>
           {/* btn */}
           <div className="flex justify-center relative xl:hidden">

@@ -123,12 +123,11 @@ const About = () => {
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         <div className="flex-1 flex flex-col justify-center">
         <h2 className="h2">Designing a <span className="text-accent"> better</span> tomorrow</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi voluptate earum laudantium architecto quas unde explicabo officiis voluptatum, amet sit!</p>
         </div>
         {/* change the position  ( placement of the div) */}
-        <div className="flex flex-col w-full max-w-[65%] h-[580px]">
+        <div className="flex flex-col w-full max-w-[65%] h-[380px]">
           {/*The items within the aboutData variable will be displayed */}
-          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
+          <div className="flex gap-x-4  mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => {
               {console.log("*******************", itemIndex)}
               return (
@@ -146,15 +145,14 @@ const About = () => {
           {/* End of aboutData items TITLE */}
 
           {/* Display aboutData items CONTENT */}
-          <div className="overflow-auto bg-purple-100/5 rounded-lg p-4 flex flex-col gap-y-4 xl:py-6 xl:gap-y-4 items-start xl:items-start">
+          <div className="overflow-auto bg-purple-100/5 rounded-lg p-4 flex flex-col gap-y-4 xl:gap-y-4 xl:overflow-auto items-start xl:items-start">
           {aboutData[index].info.map((item, itemIndex) => {
             return (
               <div className="" key={itemIndex}>
-                <div className="text-accent text-lg font-light bg-pink-300/10 p-2 rounded-lg w-fit mb-2">{item.title}</div>
-                <div>{item.tech}</div>
-                <br />
+                <div className="text-accent text-lg font-light bg-pink-300/10 p-2 rounded-lg w-fit mb-2 xl:text-lg xl:ml-[-0.2em]">{item.title}</div>
+                <div className="text-lg font-white xl:text-sm">{item.tech}</div>
                 {/*Skills */}
-                <div className="flex gap-x-4 text-2xl mx-auto  mb-4"> {item.icons}</div>
+                <div className="flex gap-x-4 text-2xl mx-auto mb-4"> {item.icons}</div>
 
                 {/* DESCRIPTION */}
                 <div>

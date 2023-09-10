@@ -105,7 +105,7 @@ const Work = () => {
           </h2>
         </div>
         {/* change the position  ( placement of the div) */}
-        <div className="flex flex-col w-full max-w-[80%] h-[580px]">
+        <div className="flex flex-col w-full max-w-[65%] h-[420px]">
           {/*The items within the aboutData variable will be displayed */}
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => {
