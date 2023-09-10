@@ -147,12 +147,12 @@ const About = () => {
           {/* End of aboutData items TITLE */}
 
           {/* Display aboutData items CONTENT */}
-          <div className="overflow-auto bg-purple-100/5 py-4 xl:py-4 xl:px-4 w-[80%] xl:w-[80%] rounded-lg  flex flex-col gap-y-2 xl:gap-y-3 items-center xl:items-start">  
+          <div className="overflow-autopy-4 xl:py-4 w-[80%] xl:w-[80%] rounded-lg  flex flex-col gap-y-2 xl:gap-y-3 items-center xl:items-start">  
           {aboutData[index].info.map((item, itemIndex) => {
             return (
               <div key={itemIndex}>
-                <div className="text-accent text-lg font-light bg-pink-300/10 p-2 rounded-lg w-fit mb-2 xl:text-lg ml-2 xl:ml-[-0.4em]">{item.title}</div>
-                <div className="text-lg font-light pl-2 w-fit xl:text-sm ml-2 xl:ml-[-0.4em]">{item.tech}</div>
+                <div className="text-accent text-lg font-light p-2 rounded-lg w-fit mb-2 xl:text-lg xl:ml-[-0.4em]">{item.title}</div>
+                <div className="text-lg font-light w-fit xl:text-sm ml-2 xl:ml-[-0.4em]">{item.tech}</div>
                 {/*Skills */}
                 <div className="flex gap-x-4 mb-4 items-start"> {item.icons}</div>
 
