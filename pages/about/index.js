@@ -3,19 +3,12 @@ import React, { useState } from "react";
 import Avatar2 from "../../components/Avatar2";
 import Circles from "../../components/Circles";
 import Image from "next/image";
-import {
-  FaPython, FaJava, FaVuejs,
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact
-} from "react-icons/fa";
 
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 
 
-import { SiNextdotjs, SiCplusplus, SiCsharp, SiAmazonaws, SiDjango, SiJenkins, SiDocker, SiGit, SiFlask, SiPostgresql, SiSpringboot, SiDotnet, SiMysql, SiMongodb} from "react-icons/si";
+import { SiAmazonaws} from "react-icons/si";
 
 //  data
 const aboutData = [
@@ -25,44 +18,44 @@ const aboutData = [
       {
         title: "Programming",
         icons: [
-          <Image  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" width={50} height={50} />,
-          <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" width={50} height={50} />,
-          <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width={50} height={50} />,
-          <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width={50} height={50}/>,
-          <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width={50} height={50} />,
+          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" width={50} height={50} />,
+          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" width={50} height={50} />,
+          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width={50} height={50} />,
+          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width={50} height={50}/>,
+          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width={50} height={50} />,
         ],
       },
       {
         title: "Client Side",
         icons: [
-          <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width={50} height={50} />,
-          <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width={50} height={50} />,
-          <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" width={50} height={50}/>,
-          <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width={50} height={50}  />,
-          <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg" width={50} height={50}/>,
-          <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg" width={50} height={50}/>,
+          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width={50} height={50} />,
+          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width={50} height={50} />,
+          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" width={50} height={50}/>,
+          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width={50} height={50}  />,
+          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg" width={50} height={50}/>,
+          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg" width={50} height={50}/>,
         ],
       },
       {
         title: "Server Side",
         icons: [
           
-            <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg" width={50} height={50}/>,
-            <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" width={50} height={50} />,
-            <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-plain.svg" width={50} height={50} />,
-            <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"  width={50} height={50}/>,
-            <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" width={50} height={50}/>,
-            <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" width={50} height={50}/>,
+            <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg" width={50} height={50}/>,
+            <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" width={50} height={50} />,
+            <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-plain.svg" width={50} height={50} />,
+            <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"  width={50} height={50}/>,
+            <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" width={50} height={50}/>,
+            <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" width={50} height={50}/>,
         ],
       },
       {
         title: "Devops & Other Tools",
         icons: [
           <SiAmazonaws />,
-          <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width={50} height={50}  />,
-          <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg"  width={50} height={50}  />,
-          <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg"  width={50} height={50} />,
-          <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain-wordmark.svg"  width={50} height={50} />
+          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width={50} height={50}  />,
+          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg"  width={50} height={50}  />,
+          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg"  width={50} height={50} />,
+          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain-wordmark.svg"  width={50} height={50} />
           
           ,
         ],
@@ -168,7 +161,7 @@ const About = () => {
                 <br />
 
                 {/*Skills */}
-                <div className="flex gap-x-4 text-2xl mx-auto  mb-4">{item.icons}</div>
+                <div className="flex gap-x-4 text-2xl mx-auto  mb-4" key={itemIndex}>{item.icons}</div>
                
 
                 {/* DESCRIPTION */}
