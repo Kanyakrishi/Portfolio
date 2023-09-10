@@ -18,44 +18,43 @@ const aboutData = [
       {
         title: "Programming",
         icons: [
-          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" width={50} height={50} />,
-          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" width={50} height={50} />,
-          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width={50} height={50} />,
-          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width={50} height={50}/>,
-          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width={50} height={50} />,
+          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" width={50} height={50} key="skill1" />,
+          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" width={50} height={50} key="skill2" />,
+          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width={50} height={50} key="skill3" />,
+          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width={50} height={50} key="skill4" />,
+          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width={50} height={50} key="skill5" />
         ],
       },
       {
         title: "Client Side",
         icons: [
-          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width={50} height={50} />,
-          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width={50} height={50} />,
-          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" width={50} height={50}/>,
-          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width={50} height={50}  />,
-          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg" width={50} height={50}/>,
-          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg" width={50} height={50}/>,
+          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width={50} height={50} key="skill6" />,
+          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width={50} height={50} key="skill7" />,
+          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" width={50} height={50}key="skill8" />,
+          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width={50} height={50}  key="skill9" />,
+          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg" width={50} height={50} key="skill10" />,
+          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg" width={50} height={50} key="skill11" />,
         ],
       },
       {
         title: "Server Side",
         icons: [
-          
-            <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg" width={50} height={50}/>,
-            <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" width={50} height={50} />,
-            <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-plain.svg" width={50} height={50} />,
-            <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"  width={50} height={50}/>,
-            <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" width={50} height={50}/>,
-            <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" width={50} height={50}/>,
+    <Image alt="skills" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg" width={50} height={50} key="skill12" />,
+    <Image alt="skills" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" width={50} height={50}  key="skill13" />,
+    <Image alt="skills" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-plain.svg" width={50} height={50}  key="skill14" />,
+    <Image alt="skills" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"  width={50} height={50} key="skill15" />,
+    <Image alt="skills" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" width={50} height={50} key="skill16" />,
+    <Image alt="skills" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" width={50} height={50} key="skill17" />,
         ],
       },
       {
         title: "Devops & Other Tools",
         icons: [
-          <SiAmazonaws />,
-          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width={50} height={50}  />,
-          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg"  width={50} height={50}  />,
-          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg"  width={50} height={50} />,
-          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain-wordmark.svg"  width={50} height={50} />
+          <SiAmazonaws key="skill18" />,
+          <Image alt="skills" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width={50} height={50}  key="skill19" />,
+          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg"  width={50} height={50}  key="skill21" />,
+          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg"  width={50} height={50}  key="skill22"/>,
+          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain-wordmark.svg"  width={50} height={50}  key="skill22" />,
           
           ,
         ],
@@ -131,6 +130,7 @@ const About = () => {
           {/*The items within the aboutData variable will be displayed */}
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => {
+              {console.log("*******************", itemIndex)}
               return (
                 <div
                   key={itemIndex}
@@ -149,26 +149,21 @@ const About = () => {
           <div className="overflow-auto bg-purple-100/5 rounded-lg p-4 flex flex-col gap-y-4 xl:py-6 xl:gap-y-4 items-start xl:items-start">
           {aboutData[index].info.map((item, itemIndex) => {
             return (
-              <div className="">
-                <div
-                  key={itemIndex}
-                  className="text-accent text-lg font-light bg-pink-300/10 p-2 rounded-lg w-fit mb-2"
-                >
-                  {item.title}
-                </div>
-                <div key={itemIndex}>{item.tech}</div>
-
+              <div className="" key={itemIndex}>
+                <div className="text-accent text-lg font-light bg-pink-300/10 p-2 rounded-lg w-fit mb-2">{item.title}</div>
+                <div>{item.tech}</div>
                 <br />
-
                 {/*Skills */}
-                <div className="flex gap-x-4 text-2xl mx-auto  mb-4" key={itemIndex}>{item.icons}</div>
-               
+                <div className="flex gap-x-4 text-2xl mx-auto  mb-4"> {item.icons}</div>
 
                 {/* DESCRIPTION */}
-                <div key={itemIndex}>
+                <div>
                   {item.description?.map((work, workIndex) => {
                     return (
-                      <ol key={workIndex} className="text-sm font-light mb-4 list-disc list-outside leading-normal text-justify ml-[-1em]">
+                      <ol
+                        key={workIndex}
+                        className="text-sm font-light mb-4 list-disc list-outside leading-normal text-justify ml-[-1em]"
+                      >
                         {work}
                       </ol>
                     );

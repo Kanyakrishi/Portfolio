@@ -132,7 +132,7 @@ const Work = () => {
                 /* Display the position, tech stack and description */
               }
               return (
-                <div className="">
+                <div className="" key={itemIndex}>
                   <div
                     key={itemIndex}
                     className="text-accent text-lg font-light bg-pink-300/10 p-2 rounded-lg w-fit mb-2
@@ -148,7 +148,10 @@ const Work = () => {
                     <div key={itemIndex} className="flex">
                       {item.icons?.map((icon, itemIndex) => {
                         return (
-                          <p key={itemIndex} className="text-2xl space-x-4 ml-2 text-white">
+                          <p
+                            key={itemIndex}
+                            className="text-2xl space-x-4 ml-2 text-white"
+                          >
                             {icon}
                           </p>
                         );
@@ -160,7 +163,10 @@ const Work = () => {
                   <div key={itemIndex}>
                     {item.description?.map((work) => {
                       return (
-                        <ol key={itemIndex} className="text-sm font-light mb-4 list-disc list-outside leading-normal text-justify ml-[-1em]">
+                        <ol
+                          key={itemIndex}
+                          className="text-sm font-light mb-4 list-disc list-outside leading-normal text-justify ml-[-1em]"
+                        >
                           {work}
                         </ol>
                       );

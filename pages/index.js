@@ -18,7 +18,8 @@ const Home = () => {
             animate="show"
             className="h2"
           >
-            Hi, I'm Kanya Krishi,<br /> <span className="text-accent">Software Developer</span>
+            Hi, I&apos;m Kanya Krishi,
+            <br /> <span className="text-accent">Software Developer</span>
           </motion.h1>
           <motion.p
             variants={fadeIn("down", 0.3)}
@@ -56,8 +57,8 @@ const Home = () => {
           initial="hidden"
           exit="hidden"
           animate="show"
-          transition={{duration:1, ease:'easeInOut'}}
-          className="w-full h-full max-w-[407px] max-h-[650px] absolute -bottom-32 lg:bottom-0 lg:right-[20%] "
+          transition={{ duration: 1, ease: "easeInOut" }}
+          className="w-full h-full max-w-[407px] max-h-[650px] absolute -bottom-32 lg:bottom-0 lg:right-[15%] "
         >
           <Avatar />
         </motion.div>
