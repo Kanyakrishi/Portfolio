@@ -126,7 +126,7 @@ const Work = () => {
           {/* End of aboutData items TITLE */}
 
           {/* Display aboutData items CONTENT */}
-          <div className="overflow-auto bg-purple-100/5 rounded-lg p-4 flex flex-col gap-y-4 xl:py-6 xl:gap-y-4 items-start xl:items-start">
+          <div className="overflow-auto bg-purple-100/5 py-4 xl:py-4 xl:px-4 w-[80%] xl:w-[80%] rounded-lg  flex flex-col gap-y-2 xl:gap-y-3 items-center xl:items-start">
             {aboutData[index].info.map((item, itemIndex) => {
               {
                 /* Display the position, tech stack and description */
@@ -135,14 +135,14 @@ const Work = () => {
                 <div className="" key={itemIndex}>
                   <div
                     key={itemIndex}
-                    className="text-accent text-lg font-light bg-pink-300/10 p-2 rounded-lg w-fit mb-2
+                    className="text-accent text-lg font-light bg-pink-300/10 p-2 m-2 rounded-lg w-fit mb-2
                 "
                   >
                     {item.title}
                   </div>
                   <div
                     key={itemIndex}
-                    className="bg-pink-300/10 p-2 rounded-lg w-fit flex space-x-4 font-light"
+                    className="bg-pink-300/10 p-2 rounded-lg w-fit flex space-x-4 font-light m-2"
                   >
                     Tech Stack - {item.tech}
                     <div key={itemIndex} className="flex">
@@ -165,7 +165,7 @@ const Work = () => {
                       return (
                         <ol
                           key={itemIndex}
-                          className="text-sm font-light mb-4 list-disc list-outside leading-normal text-justify ml-[-1em]"
+                          className="text-sm font-light mb-4 list-disc list-outside leading-normal text-justify xl:ml-[-1em]"
                         >
                           {work}
                         </ol>
