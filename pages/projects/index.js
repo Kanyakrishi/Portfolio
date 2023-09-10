@@ -1,4 +1,4 @@
-const Services = () => {
+const Projects = () => {
   return <div>Projects</div>;
 };
 
