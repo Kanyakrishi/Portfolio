@@ -148,7 +148,7 @@ const Work = () => {
                     <div key={itemIndex} className="flex">
                       {item.icons?.map((icon, itemIndex) => {
                         return (
-                          <p className="text-2xl space-x-4 ml-2 text-white">
+                          <p key={itemIndex} className="text-2xl space-x-4 ml-2 text-white">
                             {icon}
                           </p>
                         );

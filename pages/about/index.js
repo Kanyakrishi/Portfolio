@@ -173,9 +173,9 @@ const About = () => {
 
                 {/* DESCRIPTION */}
                 <div key={itemIndex}>
-                  {item.description?.map((work) => {
+                  {item.description?.map((work, workIndex) => {
                     return (
-                      <ol className="text-sm font-light mb-4 list-disc list-outside leading-normal text-justify ml-[-1em]">
+                      <ol key={workIndex} className="text-sm font-light mb-4 list-disc list-outside leading-normal text-justify ml-[-1em]">
                         {work}
                       </ol>
                     );
