@@ -24,12 +24,12 @@ const aboutData = [
       {
         title: "Programming",
         icons: [
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />,
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width={50} height={50} />,
 
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" />,
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" width={50} height={50} />,
           <SiCplusplus />,
 
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />,
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width={50} height={50} />,
           <SiCsharp />,
         ],
       },
@@ -156,24 +156,30 @@ const About = () => {
           {aboutData[index].info.map((item, itemIndex) => {
             return (
               <div className="">
-                <div key={itemIndex} className="text-accent text-lg font-light bg-pink-300/10 p-2 rounded-lg w-fit mb-2">{item.title}</div>
+                <div
+                  key={itemIndex}
+                  className="text-accent text-lg font-light bg-pink-300/10 p-2 rounded-lg w-fit mb-2"
+                >
+                  {item.title}
+                </div>
                 <div key={itemIndex}>{item.tech}</div>
 
                 <br />
 
-                 {/*Skills */}
-                  <div className="flex text-4xl space-x-4">
-                      <p>{item.icons}</p>
-                  </div>
+                {/*Skills */}
+                <div className="flex gap-x-4 text-2xl mx-auto  mb-4">{item.icons}</div>
+               
 
-            {/* DESCRIPTION */}
+                {/* DESCRIPTION */}
                 <div key={itemIndex}>
                   {item.description?.map((work) => {
-                    return ( <ol className="text-sm font-light mb-4 list-disc list-outside leading-normal text-justify ml-[-1em]">
-                        {work}</ol>);})}
+                    return (
+                      <ol className="text-sm font-light mb-4 list-disc list-outside leading-normal text-justify ml-[-1em]">
+                        {work}
+                      </ol>
+                    );
+                  })}
                 </div>
-
-                
               </div>
             );})}
             </div>
