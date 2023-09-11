@@ -99,7 +99,7 @@ const Work = () => {
         <Avatar2 />
       </motion.div>
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
-        <div className="flex-1 flex flex-col justify-center">
+        <div className="flex flex-col justify-center">
           <h2 className="h2">
             Work <span className="text-accent"> Experience</span>
           </h2>

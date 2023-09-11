@@ -118,11 +118,11 @@ const About = () => {
       >
         <Avatar2 />
       </motion.div>
-      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 xl:items-center">
+      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row xl:items-center">
 
 
-        <div className="flex-1 flex flex-col justify-center">
-        <h2 className="text-2xl xl:h2">Designing a <span className="text-accent"> better</span> tomorrow</h2>
+        <div className=" flex flex-col justify-center">
+        <h2 className="text-2xl xl:h2 m-5">Designing a <span className="text-accent"> better</span> tomorrow</h2>
         </div>
         {/* change the position  ( placement of the div) */}
         <div className="flex flex-col w-full xl:max-w-[65%] h-[380px]">
@@ -144,7 +144,7 @@ const About = () => {
           {/* End of aboutData items TITLE */}
 
           {/* Display aboutData items CONTENT */}
-          <div className="overflow-auto  py-4 xl:py-4 xl:px-1 w-[100%] xl:w-[80%] rounded-lg  flex flex-col gap-y-2 xl:gap-y-3 items-center xl:items-start">  
+          <div className="overflow-auto  py-4 xl:px-1 w-[100%] xl:w-[80%] rounded-lg  flex flex-col gap-y-2 xl:gap-y-3 items-center xl:items-start">  
           {aboutData[index].info.map((item, itemIndex) => {
             return (
               <div key={itemIndex}>
