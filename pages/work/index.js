@@ -4,6 +4,7 @@ import Avatar2 from "../../components/Avatar2";
 import Circles from "../../components/Circles";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
+import Bulb from "../../components/Bulb";
 
 
 //  data
@@ -96,7 +97,7 @@ const Work = () => {
         animate="show"
         exit="hidden"
       >
-        <Avatar2 />
+        <Bulb />
       </motion.div>
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         <div className="flex flex-col justify-center">
