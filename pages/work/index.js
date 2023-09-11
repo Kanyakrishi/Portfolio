@@ -105,7 +105,7 @@ const Work = () => {
           </h2>
         </div>
         {/* change the position  ( placement of the div) */}
-        <div className="flex flex-col w-full max-w-[65%] h-[420px]">
+        <div className="flex flex-col w-full max-w-[85%] h-[420px]">
           {/*The items within the aboutData variable will be displayed */}
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => {
@@ -126,7 +126,7 @@ const Work = () => {
           {/* End of aboutData items TITLE */}
 
           {/* Display aboutData items CONTENT */}
-          <div className="overflow-auto py-4 xl:py-4 w-[100%] xl:w-[80%] rounded-lg  flex flex-col gap-y-2 xl:gap-y-3 items-center xl:items-start">
+          <div className="overflow-auto py-4 xl:py-4 w-[100%] xl:w-[70%] rounded-lg  flex flex-col gap-y-2 xl:gap-y-3 items-center xl:items-start">
             {aboutData[index].info.map((item, itemIndex) => {
               {
                 /* Display the position, tech stack and description */
@@ -135,14 +135,14 @@ const Work = () => {
                 <div className="" key={itemIndex}>
                   <div
                     key={itemIndex}
-                    className="text-accent text-lg font-light m-2 rounded-lg w-fit mb-2
+                    className="text-accent text-lg font-light m-2 rounded-lg mb-2
                 "
                   >
                     {item.title}
                   </div>
                   <div
                     key={itemIndex}
-                    className=" rounded-lg w-fit flex space-x-4 font-light m-2"
+                    className=" rounded-lg flex space-x-4 font-light m-2"
                   >
                     Tech Stack - {item.tech}
                     <div key={itemIndex} className="flex">
@@ -165,7 +165,7 @@ const Work = () => {
                       return (
                         <ol
                           key={itemIndex}
-                          className="text-sm font-light mb-4 list-disc list-outside leading-normal text-justify"
+                          className="text-sm font-light mb-4 list-disc list-outside leading-normal text-justify pl-0"
                         >
                           {work}
                         </ol>
