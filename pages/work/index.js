@@ -165,7 +165,7 @@ const Work = () => {
                       return (
                         <ol
                           key={itemIndex}
-                          className="text-sm font-light mb-4 list-disc list-outside leading-normal text-justify xl:ml-[-1em]"
+                          className="text-sm font-light mb-4 list-disc list-outside leading-normal text-justify"
                         >
                           {work}
                         </ol>
