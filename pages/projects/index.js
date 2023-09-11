@@ -14,8 +14,8 @@ const Projects = () => {
           {/* text */}
           <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">
             <motion.h2
-              variants={fadeIn("up", 0.2)}
-              initial="initial"
+              variants={fadeIn("right", 0.2)}
+              initial="hidden"
               animate="show"
               exit="hidden"
               className="h2 xl:mt-8"
@@ -23,8 +23,8 @@ const Projects = () => {
               My <span className="text-accent">Projects</span>
             </motion.h2>
             <motion.p
-              variants={fadeIn("up", 0.4)}
-              initial="initial"
+              variants={fadeIn("right", 0.4)}
+              initial="hidden"
               animate="show"
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
@@ -33,12 +33,26 @@ const Projects = () => {
             </motion.p>
           </div>
           {/* slider */}
-          <motion.div variants={fadeIn('down', 0.6)} initial="initial" animate="show" exit="hidden"  className="w-full xl:max-w-[65%]">
+          <motion.div
+            variants={fadeIn("up", 0.6)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="w-full xl:max-w-[65%]"
+          >
             <ServiceSlider />
           </motion.div>
         </div>
       </div>
-      <Bulb />
+      <motion.div
+        className="hidden xl:flex absolute bottom-0 -left[370px]"
+        variants={fadeIn("right", 0.4)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+      >
+        <Bulb />
+      </motion.div>
     </div>
   );
 };

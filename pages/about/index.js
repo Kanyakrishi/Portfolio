@@ -106,7 +106,6 @@ const About = () => {
   const [index, setIndex] = useState(0);
   return (
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
-    
       <Circles />
 
       <motion.div
@@ -119,13 +118,25 @@ const About = () => {
         {/* <Avatar2 /> */}
       </motion.div>
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row xl:items-center">
-
-
         <div className=" flex flex-col justify-center">
-        <h2 className="text-2xl xl:h2 m-5">Designing a <span className="text-accent"> better</span> tomorrow</h2>
+          <motion.h2
+            variants={fadeIn("right", 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="text-2xl xl:h2 m-5"
+          >
+            Designing a <span className="text-accent"> better</span> tomorrow
+          </motion.h2>
         </div>
         {/* change the position  ( placement of the div) */}
-        <div className="flex flex-col w-full xl:max-w-[65%] h-[380px]">
+        <motion.div
+          variants={fadeIn("left", 0.6)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="flex flex-col w-full xl:max-w-[65%] h-[380px]"
+        >
           {/*The items within the aboutData variable will be displayed */}
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => {
@@ -136,7 +147,10 @@ const About = () => {
                     index === itemIndex &&
                     "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
                   } capitalize cursor-pointer relative xl:text-lg after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
-                  onClick={() => setIndex(itemIndex)}> {item.title} 
+                  onClick={() => setIndex(itemIndex)}
+                >
+                  {" "}
+                  {item.title}
                 </div>
               );
             })}
@@ -144,36 +158,41 @@ const About = () => {
           {/* End of aboutData items TITLE */}
 
           {/* Display aboutData items CONTENT */}
-          <div className="overflow-auto  py-4 xl:px-1 w-[100%] xl:w-[80%] rounded-lg  flex flex-col gap-y-2 xl:gap-y-3 items-center xl:items-start">  
-          {aboutData[index].info.map((item, itemIndex) => {
-            return (
-              <div key={itemIndex}>
-                <div className="text-accent text-lg font-light p-2 rounded-lg  mb-2 xl:text-lg">{item.title}</div>
-                <div className="text-lg font-white xl:text-sm px-3">{item.tech}</div>
-                {/*Skills */}
-                <div className="flex gap-x-4 text-2xl mx-auto mb-4"> {item.icons}</div>
+          <div className="overflow-auto  py-4 xl:px-1 w-[100%] xl:w-[80%] rounded-lg  flex flex-col gap-y-2 xl:gap-y-3 items-center xl:items-start">
+            {aboutData[index].info.map((item, itemIndex) => {
+              return (
+                <div key={itemIndex}>
+                  <div className="text-accent text-lg font-light p-2 rounded-lg  mb-2 xl:text-lg">
+                    {item.title}
+                  </div>
+                  <div className="text-lg font-white xl:text-sm px-3">
+                    {item.tech}
+                  </div>
+                  {/*Skills */}
+                  <div className="flex gap-x-4 text-2xl mx-auto mb-4">
+                    {" "}
+                    {item.icons}
+                  </div>
 
-                {/* DESCRIPTION */}
-                <div>
-                  {item.description?.map((work, workIndex) => {
-                    return (
-                      <ol
-                        key={workIndex}
-                        className="text-sm font-light mb-4 list-disc list-outside leading-normal text-justify"
-                      >
-                        {work}
-                      </ol>
-                    );
-                  })}
+                  {/* DESCRIPTION */}
+                  <div>
+                    {item.description?.map((work, workIndex) => {
+                      return (
+                        <ol
+                          key={workIndex}
+                          className="text-sm font-light mb-4 list-disc list-outside leading-normal text-justify"
+                        >
+                          {work}
+                        </ol>
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
-            );})}
-            </div>
-            {/* End of Description */}
-
-
-
-        </div>
+              );
+            })}
+          </div>
+          {/* End of Description */}
+        </motion.div>
       </div>
     </div>
   );

@@ -49,23 +49,24 @@ const TestimonialSlider = () => {
       {testimonialData.map((testimony, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className="flex flex-col items-center md:flex-row gap-x-4 h-full px-16 md:px-0">
+            <div className="flex  flex-col items-center md:flex-row gap-x-4 h-full md:px-0">
               {/* insert image, name and position */}
               <div className="w-full max-w-[200px] flex flex-col xl:justify-center items-center relative xl:mx-3">
                 <div className="flex flex-col justify-center text-center">
-                 
                   <div>{testimony.name}</div>
-                  <div className="text-sm text-gray-600">{testimony.position}</div>
+                  <div className="text-sm text-gray-600">
+                    {testimony.position}
+                  </div>
                 </div>
               </div>
 
               <div>
                 {/* Message */}
-                <div className="flex-1 flex flex-col justify-center before:w-[1px] xl:before:bg-white/20 xl:before:absolute xl:before:left-0 relative xl:before:h-[200px] xl:pl-20 mt-4 h-[200px]">
+                <div className="flex-1 flex flex-col justify-center before:w-[1px] xl:before:bg-white/20 xl:before:absolute xl:before:left-0 relative xl:before:h-[200px] xl:pl-20 mt-4 xl:h-[300px] h-[220px] p-5">
                   <div className="mb-2">
                     <FaQuoteLeft className="text-lg xl:text-2xl text-white/20 mx-auto md:mx-0 md:my-2" />
                   </div>
-                  <div className="xl:text-sm text-center md:text-left">
+                  <div className="xl:text-sm leading-[1.5] text-justify overflow-auto ">
                     {testimony.message}
                   </div>
                 </div>

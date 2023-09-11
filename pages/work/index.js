@@ -92,7 +92,7 @@ const Work = () => {
 
       <motion.div
         className="hidden xl:flex absolute bottom-0 -left[370px]"
-        variants={fadeIn("right", 0.2)}
+        variants={fadeIn("right", 0.4)}
         initial="hidden"
         animate="show"
         exit="hidden"
@@ -101,12 +101,24 @@ const Work = () => {
       </motion.div>
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         <div className="flex flex-col justify-center">
-          <h2 className="h2">
+          <motion.h2
+            className="h2"
+            variants={fadeIn("up", 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+          >
             Work <span className="text-accent"> Experience</span>
-          </h2>
+          </motion.h2>
         </div>
         {/* change the position  ( placement of the div) */}
-        <div className="flex flex-col w-full max-w-[85%] h-[420px]">
+        <motion.div
+          variants={fadeIn("left", 0.6)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="flex flex-col w-full max-w-[85%] h-[420px]"
+        >
           {/*The items within the aboutData variable will be displayed */}
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => {
@@ -177,7 +189,7 @@ const Work = () => {
               );
             })}
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
