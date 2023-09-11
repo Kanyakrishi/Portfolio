@@ -127,7 +127,7 @@ const About = () => {
         <h2 className="text-2xl xl:h2">Designing a <span className="text-accent"> better</span> tomorrow</h2>
         </div>
         {/* change the position  ( placement of the div) */}
-        <div className="flex flex-col w-full xl:max-w-[65%] h-[380px] overflow-y-auto">
+        <div className="flex flex-col w-full xl:max-w-[65%] h-[380px]">
           {/*The items within the aboutData variable will be displayed */}
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => {
@@ -147,14 +147,14 @@ const About = () => {
           {/* End of aboutData items TITLE */}
 
           {/* Display aboutData items CONTENT */}
-          <div className="overflow-autopy-4 xl:py-4 w-[80%] xl:w-[80%] rounded-lg  flex flex-col gap-y-2 xl:gap-y-3 items-center xl:items-start">  
+          <div className="overflow-auto  py-4 xl:py-4 xl:px- w-[80%] xl:w-[80%] rounded-lg  flex flex-col gap-y-2 xl:gap-y-3 items-center xl:items-start">  
           {aboutData[index].info.map((item, itemIndex) => {
             return (
               <div key={itemIndex}>
-                <div className="text-accent text-lg font-light p-2 rounded-lg w-fit mb-2 xl:text-lg xl:ml-[-0.4em]">{item.title}</div>
-                <div className="text-lg font-light w-fit xl:text-sm ml-2 xl:ml-[-0.4em]">{item.tech}</div>
+                <div className="text-accent text-lg font-light p-2 rounded-lg w-fit mb-2 xl:text-lg">{item.title}</div>
+                <div className="text-lg font-white xl:text-sm ">{item.tech}</div>
                 {/*Skills */}
-                <div className="flex gap-x-4 mb-4 items-start"> {item.icons}</div>
+                <div className="flex gap-x-4 text-2xl mx-auto mb-4"> {item.icons}</div>
 
                 {/* DESCRIPTION */}
                 <div>
@@ -162,7 +162,7 @@ const About = () => {
                     return (
                       <ol
                         key={workIndex}
-                        className="text-sm font-light mb-4 list-disc list-outside leading-normal text-justify xl:ml-[-1em]"
+                        className="text-sm font-light mb-4 list-disc list-outside leading-normal text-justify ml-[-1em]"
                       >
                         {work}
                       </ol>
