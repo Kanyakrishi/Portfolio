@@ -8,6 +8,7 @@ import {
   RxArrowRight,
 } from "react-icons/rx";
 
+import Link from 'next/link';
 // data
 const serviceData = [
   {
@@ -17,6 +18,7 @@ const serviceData = [
       "Developed and launched Travel Diaries, an app to diligently record states visited.",
       "Modeled Apple Photos' innovative feature, displaying memories and 3 photos on zoom in & out of specific destinations.",
     ],
+    link: "https://travel-diaries-kanya.netlify.app/",
   },
   {
     icon: <RxPencil2 />,
@@ -26,16 +28,24 @@ const serviceData = [
       "Utilized mathematical algorithms to recognize human gestures to control viewing of PDFs and PowerPoints.",
       "Detected objects using TensorFlow and OpenCV. Drew boundary boxes using the Haar Cascade algorithm. Enabled PDF zooming in, zooming out, and scrolling up and down using PyAutoGUI.",
     ],
+    link: "https://github.com/iamdaaniyaal/HCI-FinalYearProject",
   },
   {
     icon: <RxDesktop />,
     title: "Student Project Assessment Review Committee Software",
-    description: ["Focused to help professors track students’ advancements on projects, helped students mark and review their progress at the various phases of a project.", "Assisted in allocation of mentors to the student groups based on their field of interest. The final score report along with comments will be available in PDF format."],
+    description: [
+      "Focused to help professors track students’ advancements on projects, helped students mark and review their progress at the various phases of a project.",
+      "Assisted in allocation of mentors to the student groups based on their field of interest. The final score report along with comments will be available in PDF format.",
+    ],
+    link: " "
   },
   {
     icon: <RxReader />,
     title: "Airbnb Clone",
-    description: ["Modeled Airbnb website to learn more about React and TailwindCSS"],
+    description: [
+      "Modeled Airbnb website to learn more about React and TailwindCSS",
+    ],
+    link: " "
   },
 ];
 
@@ -67,21 +77,21 @@ const ServiceSlider = () => {
       {serviceData.map((item, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className=" rounded-lg bg-purple-500/10 px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-purple-400/20 transition-all duration-300 h-[250px] overflow-auto">
+            <div className=" rounded-lg bg-purple-500/10 px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-purple-400/20 transition-all duration-300 h-[200px] xl:h-[270px] overflow-auto">
               <div className="text-accent mb-2">{item.icon}</div>
               <div className="mb-8">
                 <div className="text-lg mb-2">{item.title}</div>
-                <p className="max-w-[350px] leading-normal text-sm text-justify">
+                <div className="max-w-[350px] leading-normal text-sm text-justify font-thin">
                   {item.description.map((desc, descIndex) => {
                     return (
-                      <p key={descIndex} className="mb-2">{desc}</p>
+                      <div key={descIndex} className="mb-2">{desc}</div>
 
                     );
                   })}
-                </p>
+                </div>
               </div>
               <div className="text-2xl">
-                <RxArrowRight className="group-hover:translate-x-2 group-hover:text-accent transition-all duration-300" />
+                <Link href={item.link} target="_blank"><RxArrowRight className="hover:translate-x-2 hover:text-accent transition-all duration-300" /></Link>
               </div>
             </div>
           </SwiperSlide>
