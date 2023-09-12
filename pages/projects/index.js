@@ -29,7 +29,7 @@ const Projects = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              These are my projects
+              Here are a couple of projects that I have worked on. Click on the arrow button and head to a live demo of the project or to the github repository.
             </motion.p>
           </div>
           {/* slider */}

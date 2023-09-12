@@ -103,7 +103,7 @@ const Work = () => {
         <div className="flex flex-col justify-center">
           <motion.h2
             className="h2"
-            variants={fadeIn("up", 0.4)}
+            variants={fadeIn("left", 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -113,7 +113,7 @@ const Work = () => {
         </div>
         {/* change the position  ( placement of the div) */}
         <motion.div
-          variants={fadeIn("left", 0.6)}
+          variants={fadeIn("right", 0.6)}
           initial="hidden"
           animate="show"
           exit="hidden"
