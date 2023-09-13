@@ -28,6 +28,13 @@ const Home = () => {
             animate="show"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
+            <a
+              href="https://dl.dropboxusercontent.com/scl/fi/hmmo4r6of4elxqoazp3ze/Kanya-Krishi-Resume.pdf?rlkey=d9bb9lg11zpk3vpkafwilt48z"
+              download="Kanya Krishi Resume"
+              target="_blank"
+            >
+              <button className="bg-purple-300/10 rounded-lg p-2"> Download Resume</button>
+            </a>
           </motion.p>
           {/* btn */}
           <div className="flex justify-center relative xl:hidden">
