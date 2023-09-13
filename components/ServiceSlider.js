@@ -8,7 +8,7 @@ import {
   RxArrowRight,
 } from "react-icons/rx";
 
-import Link from 'next/link';
+import Link from "next/link";
 // data
 const serviceData = [
   {
@@ -37,7 +37,6 @@ const serviceData = [
       "Focused to help professors track students’ advancements on projects, helped students mark and review their progress at the various phases of a project.",
       "Assisted in allocation of mentors to the student groups based on their field of interest. The final score report along with comments will be available in PDF format.",
     ],
-    link: " "
   },
   {
     icon: <RxReader />,
@@ -45,7 +44,7 @@ const serviceData = [
     description: [
       "Modeled Airbnb website to learn more about React and TailwindCSS",
     ],
-    link: " "
+    link: "https://kanya-airbnb.netlify.app",
   },
 ];
 
@@ -81,18 +80,23 @@ const ServiceSlider = () => {
               <div className="text-accent mb-2">{item.icon}</div>
               <div className="mb-8">
                 <div className="text-lg mb-2">{item.title}</div>
-                <div className="max-w-[350px] leading-normal text-sm text-justify font-thin">
+                <div className="max-w-[350px] leading-normal text-sm  font-thin">
                   {item.description.map((desc, descIndex) => {
                     return (
-                      <div key={descIndex} className="mb-2">{desc}</div>
-
+                      <div key={descIndex} className="mb-2">
+                        {desc}
+                      </div>
                     );
                   })}
                 </div>
               </div>
-              <div className="text-2xl">
-                <Link href={item.link} target="_blank"><RxArrowRight className="hover:translate-x-2 hover:text-accent transition-all duration-300" /></Link>
-              </div>
+              {item.link && (
+                <div className="text-2xl">
+                  <Link href={item.link} target="_blank">
+                    <RxArrowRight className="hover:translate-x-2 hover:text-accent transition-all duration-300" />
+                  </Link>
+                </div>
+              )}
             </div>
           </SwiperSlide>
         );
