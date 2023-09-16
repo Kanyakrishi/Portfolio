@@ -12,6 +12,15 @@ import Link from "next/link";
 // data
 const serviceData = [
   {
+    icon: <RxRocket />,
+    title: "CareerCompass using using React Native, Expo Router, MobX ",
+    description: [
+      "Developed a cross platform mobile application to simplify job searches.",
+      "Integrated RapidAPI Job Search using axios to fetch job data and effectively manage React Native components.",
+      "Converted Dribbble designs into pixel-perfect React Native code, maintaining designer's vision & user experience.",
+    ],
+  },
+  {
     icon: <RxCrop />,
     title: "Travel Diaries using GoogleMaps API, React ",
     description: [

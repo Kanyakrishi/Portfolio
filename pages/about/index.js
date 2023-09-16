@@ -33,6 +33,7 @@ const aboutData = [
           <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" width={50} height={50}key="skill8" />,
           <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg" width={50} height={50} key="skill10" />,
           <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg" width={50} height={50} key="skill11" />,
+          <Image alt="skills icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" width={50} height={50} key="skill11a" />
         ],
       },
       {

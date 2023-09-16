@@ -29,11 +29,14 @@ const Home = () => {
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
             <a
-              href="https://dl.dropboxusercontent.com/scl/fi/hmmo4r6of4elxqoazp3ze/Kanya-Krishi-Resume.pdf?rlkey=d9bb9lg11zpk3vpkafwilt48z"
+              href="https://dl.dropboxusercontent.com/scl/fi/ts5t5igoqbv6y1qpxqgtp/Kanya-Krishi.pdf?rlkey=pkaj2h6r76ujnqc8cqmdnsg6b"
               download="Kanya Krishi Resume"
               target="_blank"
             >
-              <button className="bg-purple-300/10 rounded-lg p-2"> Download Resume</button>
+              <button className="bg-purple-300/10 rounded-lg p-2">
+                {" "}
+                Download Resume
+              </button>
             </a>
           </motion.p>
           {/* btn */}
