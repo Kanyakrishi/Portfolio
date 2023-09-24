@@ -29,7 +29,7 @@ const Home = () => {
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
             <a
-              href="https://dl.dropboxusercontent.com/scl/fi/ts5t5igoqbv6y1qpxqgtp/Kanya-Krishi.pdf?rlkey=pkaj2h6r76ujnqc8cqmdnsg6b"
+              href="https://dl.dropboxusercontent.com/scl/fi/kptf1esr345llq0k5axnq/New-Resume-Kanya-Krishi.pdf?rlkey=ncc9b1h3mr6afmrh1za8apm3n&dl=0"
               download="Kanya Krishi Resume"
               target="_blank"
             >
