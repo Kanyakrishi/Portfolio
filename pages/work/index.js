@@ -164,8 +164,6 @@ const Work = () => {
                   </div>
 
                   <br />
-                  {link && <div>{link} </div>}
-  
                   <div key={itemIndex}>
                     {item.description?.map((work) => {
                       return (
