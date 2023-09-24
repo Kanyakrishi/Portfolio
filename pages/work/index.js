@@ -23,7 +23,7 @@ const aboutData = [
           "Received recognition for 'Going the Extra Mile'.",
           "Designed a UI Dashboard using Figma to resolve a business issue exisitng within the organiztion as part of the Summer Pitch Competition.",
         ],
-        stage: "2011 - 2012",
+        link: "https://www.linkedin.com/pulse/nasdaq-internship-kanya-krishi/?trackingId=eG%2F3DbzUQuuJZfAuTBOVHQ%3D%3D",
       },
     ],
   },
@@ -32,22 +32,17 @@ const aboutData = [
     info: [
       {
         title: "Senior Software Developer",
-        stage: "2012 - 2023",
         tech: "Python, Java, Kubernetes, Docker ",
         duration: "Jul 2019 – Jul 2022",
         description: [
+          "Integrated 5G Massive MIMO support for T-Mobile's Nokia & Ericsson vendors thus elevating 5G module sales by 40%.",
+          "Developed and maintained 2 pivotal components, introducing enhancements that significantly improved efficiency in terms of load, performance, and accuracy. Provided valuable technical support to partner teams.",
+          " Designed and executed an advanced polygon creation algorithm in collaboration with the product architect, leveraging Python to enhance detection of high-impact network cells in the backend.",
+          "Pioneered a fully functional weather-based optimization module from scratch that provides better coverage to the affected area, as a part of 2-person innovation team.",
+          "Expertise in writing technical documentation and drafting technical specification for implemented features in 5G / 4G.",
           "Spearheaded a team of 3 developers as the Technical Area Owner, overseeing a critical revenue-generating module.",
-          "Elevated module sales by incorporating 5G Massive MIMO support for T-Mobile's Nokia and Ericsson vendors, resulting in a substantial increase in market share by 43%.",
-          "Earned the 'Fearless' Badge and accolades for exemplary technical proficiency and outstanding leadership abilities.",
-          "Conducted End-to-End (E2E) demonstrations for an audience of 30+ internal and external stakeholders.",
-          " Investigated performance bottlenecks, devised optimal solutions for 35+ performance and functional bugs.",
-          "Collaborated with the product architect to develop an innovative polygon creation algorithm, enhancing the detection of highly impacted network cells.",
-          "Attained exclusive ownership of 2 pivotal components, introducing enhancements that significantly improved efficiency in terms of load, performance, and accuracy.",
-          "Provided valuable technical guidance to partner teams.",
-          "Pioneered a fully functional weather-based optimization module from scratch that provides better coverage to the are under the influence of bad weather as a part of 2-person innovation team.",
-          "Revamped cloud architecture to enhance 5G network slicing capabilities.",
-          "Led and contributed to more than 20 distinct program epics, mentoring 3 developers to foster their technical growth.",
-          "Demonstrated exceptional leadership as Scrum Master for agile team of 4 developers , 3 technical leads over 6 months.",
+          "Revamped cloud architecture to enhance 5G network slicing capabilities using Java, Docker, Kubernetes.",
+          "Participated in 20 + program epics, provided technical guidance for 3 developers, demonstrated exceptional leadership as scrum master for an agile team and technical proficiency which led to achievement of the ‘Fearless Badge’ ",
         ],
       },
     ],
@@ -57,10 +52,9 @@ const aboutData = [
     info: [
       {
         title: "Software Enigneeing Intern",
-        stage: "2011",
         description: [
-          "Implemented a tool to automate an entire department’s manual work of scheduling module executions after every version release.",
-          "Improved productivity by simplifying the process of triggering and analyzing performance run times of all Nokia’s EdenNet components.",
+          "Built full-stack web app with Django, Flask & MongoDB to automate the triggering and analysis of module performance.",
+          "Incorporated continuous integration of front-end & back-end components, along with code review, debugging testing & validation, in a collaborative cross-functional setting and conducted end-to-end (E2E) demos of features to stakeholders.",
         ],
         tech: "Python, Django, Flask, MongoDB, HTML, CSS, Bootstrap, JavaScript",
       },
@@ -71,12 +65,9 @@ const aboutData = [
     info: [
       {
         title: "Student-Intern",
-        stage: "2011",
         description: [
-          "Streamlined and established a Telecalling - Data Software to upload data through excel sheets, update, validate and categorize the data, view interactive and responsive charts of records, and download progress reports.",
-          "Restructured communication flow between the Data collection and Data Validation departments",
-          "Reduced manual work of updating excel sheets by 50%.",
-          "Easier to track the entire teams progress at a given time.",
+          "Streamlined a scalable Telecalling Data Software to validate, categorize & update data using SQL, view interactive & responsive charts & download progress reports.",
+          "Restructured communication flow and reduced manual work by 50%.",
         ],
         tech: "PHP, HTML, CSS, Bootstrap, JavaScript, DataAnalysis",
       },
@@ -173,6 +164,8 @@ const Work = () => {
                   </div>
 
                   <br />
+                  {link && <div>{link} </div>}
+  
                   <div key={itemIndex}>
                     {item.description?.map((work) => {
                       return (

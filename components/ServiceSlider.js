@@ -19,6 +19,7 @@ const serviceData = [
       "Integrated RapidAPI Job Search using axios to fetch job data and effectively manage React Native components.",
       "Converted Dribbble designs into pixel-perfect React Native code, maintaining designer's vision & user experience.",
     ],
+    link: "https://github.com/Kanyakrishi/CareerCompass",
   },
   {
     icon: <RxCrop />,

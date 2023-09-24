@@ -94,8 +94,7 @@ const aboutData = [
       {
         title: "Certifications Completed",
         description: [
-          "Cloud Architecture – Core Concepts",
-          "NokiaEDU Learning, 2021",
+          "Cloud Architecture – Core Concepts, NokiaEDU Learning, 2021",
           "Android App Development &Java Programming.",
         ],
       },
